@@ -21,6 +21,7 @@ async function fetchWeatherData(cityName) {
       let asideDataDisappear = document.querySelectorAll(".inactive");
       [...asideDataDisappear].forEach((v, i) => {
         v.style.display = "none";
+        v.style.visibility = "none";
       });
       displayData.innerHTML =
         "Location is not valid. Please enter valid Location";
