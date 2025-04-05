@@ -1,91 +1,123 @@
-# Weather Application
+# 🌤️ SkyCast Application
 
-This project is a responsive weather application that allows users to search for real-time weather data by entering a city name. It uses the OpenWeatherMap API to retrieve and display weather information like temperature, wind speed, and humidity.
-
----
-
-## Features
-
-- **User-Friendly Interface**: Simple, clean, and responsive design.
-- **Real-Time Weather Data**: Fetches and displays temperature, wind speed, and humidity for a given city.
-- **Error Handling**: Notifies the user if an invalid location is entered.
-- **Interactive UI**: Includes hover effects and dynamic updates.
+A responsive and interactive **Weather Application** built with HTML, CSS, and JavaScript. This app allows users to search real-time weather conditions for any city using the **OpenWeatherMap API**.
 
 ---
 
-## Project Structure
+## 🚀 Features
 
-### HTML (`index.html`)
-- Provides the structure of the app.
-- Includes input fields, buttons, and sections for displaying weather data.
-- Elements:
-  - Input field for city name.
-  - Button to trigger the search.
-  - Sections to display weather details.
-
-### CSS (`style.css`)
-- Styles the layout and components of the application.
-- Key features:
-  - Centered `main-container` for the app interface.
-  - Stylish `article` card design.
-  - Responsive design for mobile devices.
-  - Smooth button hover effects.
-
-### JavaScript (`script.js`)
-- Handles the core functionality of the app.
-- Key functions:
-  - Fetches weather data from the OpenWeatherMap API using `fetchWeatherData()`.
-  - Dynamically updates the UI with weather details.
-  - Handles errors like invalid locations.
+- **User-Friendly Interface** – Simple, clean, and intuitive UI.
+- **Real-Time Weather Data** – Fetches temperature, wind speed, and humidity.
+- **Error Handling** – Alerts users when an invalid city is entered.
+- **Interactive UI** – Smooth hover effects and dynamic updates.
+- **Responsive Design** – Works seamlessly on mobile and desktop devices.
 
 ---
 
-## Installation and Usage
+## 🧱 Project Structure
 
-1. **Setup**:
-   - Clone or download the repository.
-   - Ensure you have a valid API key from OpenWeatherMap.
-   - Replace the placeholder API key in `script.js`:
-     ```javascript
-     `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=YOUR_API_KEY`
-     ```
-
-2. **Run the App**:
-   - Open the `index.html` file in a web browser.
-
-3. **Usage**:
-   - Enter the name of a city in the input field and press the "Search" button.
-   - The weather details will be displayed if the city is valid.
+```
+weather-app/
+├── index.html     # App structure and elements
+├── style.css      # Responsive and styled UI
+└── script.js      # API calls and interactivity
+```
 
 ---
 
-## API Integration
+## 📄 index.html
 
-- The app integrates with the OpenWeatherMap API to fetch weather data.
-- API URL format:
-  ```
-  https://api.openweathermap.org/data/2.5/weather?q={cityName}&appid={API_KEY}
-  ```
-- Temperature is converted from Kelvin to Celsius for display.
+- Input field for city name
+- Search button
+- Sections to display temperature, humidity, and wind speed
 
 ---
 
-## Requirements
+## 🎨 style.css
 
-- Web browser with JavaScript enabled.
-- Internet connection for API requests.
-
----
-
-## Notes
-
-- **Error Handling**:
-  - Displays a message if an invalid city name is entered.
-  - Hides weather data sections until valid data is fetched.
-- **Responsive Design**:
-  - Optimized for desktop and mobile screens.
+- Centered layout with clean weather cards
+- Smooth transitions and button hover effects
+- Media queries for mobile responsiveness
 
 ---
 
+## ⚙️ script.js
 
+- `fetchWeatherData()` – Calls OpenWeatherMap API
+- Parses and updates the DOM with weather data
+- Error handling for invalid inputs
 
+---
+
+## 🔑 API Integration
+
+Uses **OpenWeatherMap API**:
+
+```javascript
+https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=YOUR_API_KEY
+```
+
+👉 Replace `YOUR_API_KEY` in `script.js` with a valid key.
+
+Temperature is converted from **Kelvin to Celsius** before display.
+
+---
+
+## 🛠️ Installation & Usage
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/Kaustubh-S8/SkyCast.git
+```
+
+### 2. Setup API Key
+
+In `script.js`, replace the placeholder with your API key:
+
+```javascript
+const apiKey = "YOUR_API_KEY";
+```
+
+### 3. Run the App
+
+Just open `index.html` in any modern browser.
+
+---
+
+## ✅ Requirements
+
+- Modern web browser
+- Internet connection for API requests
+- JavaScript enabled
+
+---
+
+## 📱 Responsive Design
+
+Optimized for both desktop and mobile views using CSS media queries.
+
+---
+
+## ⚠️ Notes
+
+- Displays a warning for invalid city names.
+- Weather information only appears after a valid search.
+
+---
+
+## 📜 License
+
+MIT License. Free to use, modify, and distribute.
+
+---
+
+## 📧 Contact
+
+**Kaustubh Satam**  
+✉️ satamkaustubh@gmail.com  
+🔗 [GitHub - Kaustubh-S8](https://github.com/Kaustubh-S8)
+
+---
+
+### ☁️ Get the weather instantly – anytime, anywhere!
